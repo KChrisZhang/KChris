@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>MAC: Git命令自动补全 | Practice</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="安装 HomeBrew1ruby -e &quot;$(curl -fsSL https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;Homebrew&#x2F;install&#x2F;master&#x2F;install)&quot;    通过Brew安装bash-completion1brew install bash-completion    查看bash-completion文件信息1brew info bash-co">
+<meta property="og:type" content="article">
+<meta property="og:title" content="MAC: Git命令自动补全">
+<meta property="og:url" content="https://kchriszhang.github.io/KChris/2020/06/01/MAC-Git%E5%91%BD%E4%BB%A4%E8%87%AA%E5%8A%A8%E8%A1%A5%E5%85%A8/index.html">
+<meta property="og:site_name" content="Practice">
+<meta property="og:description" content="安装 HomeBrew1ruby -e &quot;$(curl -fsSL https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;Homebrew&#x2F;install&#x2F;master&#x2F;install)&quot;    通过Brew安装bash-completion1brew install bash-completion    查看bash-completion文件信息1brew info bash-co">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-06-01T08:12:58.000Z">
+<meta property="article:modified_time" content="2020-06-01T08:14:14.686Z">
+<meta property="article:author" content="Kchris Zhang">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/KChris/atom.xml" title="Practice" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/KChris/css/style.css">
+
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/KChris/" id="logo">Practice</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/KChris/" id="subtitle">Practice everyting.</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/KChris/">Home</a>
+        
+          <a class="main-nav-link" href="/KChris/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/KChris/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://kchriszhang.github.io/KChris"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-MAC-Git命令自动补全" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/KChris/2020/06/01/MAC-Git%E5%91%BD%E4%BB%A4%E8%87%AA%E5%8A%A8%E8%A1%A5%E5%85%A8/" class="article-date">
+  <time datetime="2020-06-01T08:12:58.000Z" itemprop="datePublished">2020-06-01</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      MAC: Git命令自动补全
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="安装-HomeBrew"><a href="#安装-HomeBrew" class="headerlink" title="安装 HomeBrew"></a>安装 HomeBrew</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ruby -e <span class="string">"<span class="variable">$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)</span>"</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="通过Brew安装bash-completion"><a href="#通过Brew安装bash-completion" class="headerlink" title="通过Brew安装bash-completion"></a>通过Brew安装bash-completion</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install bash-completion</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="查看bash-completion文件信息"><a href="#查看bash-completion文件信息" class="headerlink" title="查看bash-completion文件信息"></a>查看bash-completion文件信息</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew info bash-comletion</span><br></pre></td></tr></table></figure>
+
+<p>![image-20190715142112012](Users/kchris/Library/Application Support/typora-user-images/image-20190715142112012.png)</p>
+<h3 id="新建或直接编辑-bash-profile文件"><a href="#新建或直接编辑-bash-profile文件" class="headerlink" title="新建或直接编辑.bash_profile文件"></a>新建或直接编辑.bash_profile文件</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">cd ~</span><br><span class="line">&#x2F;&#x2F; open -e ~&#x2F;.bash_profile</span><br><span class="line">vim .bash_profile</span><br><span class="line">i &#x2F;&#x2F; 进入insert模式，将上述红框内的内容复制到文件</span><br><span class="line">esc &#x2F;&#x2F; 退出insert模式</span><br><span class="line">:wq &#x2F;&#x2F; 保存文件并退出</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="Clone-git项目"><a href="#Clone-git项目" class="headerlink" title="Clone git项目"></a>Clone git项目</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/git/git.git</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="指定文件复制到指定目录"><a href="#指定文件复制到指定目录" class="headerlink" title="指定文件复制到指定目录"></a>指定文件复制到指定目录</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> git/contrib/completion</span><br><span class="line">cp git-completion.bash /usr/<span class="built_in">local</span>/opt/bash-completion/etc/bash_completion.d/git-completion.bash</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="终端输入命令"><a href="#终端输入命令" class="headerlink" title="终端输入命令"></a>终端输入命令</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">brew unlink bash-completion</span><br><span class="line">brew link bash-completion</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="重启终端查看git命令"><a href="#重启终端查看git命令" class="headerlink" title="重启终端查看git命令"></a>重启终端查看git命令</h3>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://kchriszhang.github.io/KChris/2020/06/01/MAC-Git%E5%91%BD%E4%BB%A4%E8%87%AA%E5%8A%A8%E8%A1%A5%E5%85%A8/" data-id="ckaw85wfi0001bousf831f74y" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/KChris/2020/06/01/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E9%80%82%E9%85%8D%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          移动端适配解决方案
+        
+      </div>
+    </a>
+  
+  
+    <a href="/KChris/2020/06/01/HTTP%E7%8A%B6%E6%80%81%E7%A0%81/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">HTTP状态码</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/KChris/tags/Learning/" rel="tag">Learning</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/KChris/tags/Learning/" style="font-size: 10px;">Learning</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/KChris/archives/2020/06/">June 2020</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/KChris/2020/06/01/SEO%E4%BC%98%E5%8C%96/"># SEO优化</a>
+          </li>
+        
+          <li>
+            <a href="/KChris/2020/06/01/MAC-%E7%BB%88%E7%AB%AF-%E8%BF%9B%E7%A8%8B%E5%B7%B2%E5%AE%8C%E6%88%90-%E9%97%AE%E9%A2%98/">MAC: 终端[进程已完成]问题</a>
+          </li>
+        
+          <li>
+            <a href="/KChris/2020/06/01/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E9%80%82%E9%85%8D%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/">移动端适配解决方案</a>
+          </li>
+        
+          <li>
+            <a href="/KChris/2020/06/01/MAC-Git%E5%91%BD%E4%BB%A4%E8%87%AA%E5%8A%A8%E8%A1%A5%E5%85%A8/">MAC: Git命令自动补全</a>
+          </li>
+        
+          <li>
+            <a href="/KChris/2020/06/01/HTTP%E7%8A%B6%E6%80%81%E7%A0%81/">HTTP状态码</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2020 Kchris Zhang<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/KChris/" class="mobile-nav-link">Home</a>
+  
+    <a href="/KChris/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/KChris/fancybox/jquery.fancybox.css">
+
+  
+<script src="/KChris/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/KChris/js/script.js"></script>
+
+
+
+
+  </div>
+</body>
+</html>
