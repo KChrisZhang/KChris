@@ -7,22 +7,22 @@
   
   <title>移动端适配解决方案 | Practice</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="设置viewport标签1&lt;meta name&#x3D;&quot;viewport&quot; content&#x3D;&quot;width&#x3D;device-width,user-scalable&#x3D;no,initial-scale&#x3D;1.0,  maximum-scale&#x3D;1.0,minimum-scale&#x3D;1.0&quot;&gt;    使用相对单位rem12345678910111213141516171819202122&#x2F;&#x2F; rem.js">
+  <meta name="description" content="设置viewport标签1&lt;meta name&#x3D;&quot;viewport&quot; content&#x3D;&quot;width&#x3D;device-width,user-scalable&#x3D;no,initial-scale&#x3D;1.0,  maximum-scale&#x3D;1.0,minimum-scale&#x3D;1.0&quot;&gt;">
 <meta property="og:type" content="article">
 <meta property="og:title" content="移动端适配解决方案">
 <meta property="og:url" content="https://kchriszhang.github.io/KChris/2020/06/01/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E9%80%82%E9%85%8D%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/index.html">
 <meta property="og:site_name" content="Practice">
-<meta property="og:description" content="设置viewport标签1&lt;meta name&#x3D;&quot;viewport&quot; content&#x3D;&quot;width&#x3D;device-width,user-scalable&#x3D;no,initial-scale&#x3D;1.0,  maximum-scale&#x3D;1.0,minimum-scale&#x3D;1.0&quot;&gt;    使用相对单位rem12345678910111213141516171819202122&#x2F;&#x2F; rem.js">
+<meta property="og:description" content="设置viewport标签1&lt;meta name&#x3D;&quot;viewport&quot; content&#x3D;&quot;width&#x3D;device-width,user-scalable&#x3D;no,initial-scale&#x3D;1.0,  maximum-scale&#x3D;1.0,minimum-scale&#x3D;1.0&quot;&gt;">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-06-01T08:15:09.000Z">
-<meta property="article:modified_time" content="2020-06-01T08:15:55.887Z">
+<meta property="article:modified_time" content="2020-06-02T05:48:28.728Z">
 <meta property="article:author" content="Kchris Zhang">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternate" href="/KChris/atom.xml" title="Practice" type="application/atom+xml">
   
   
-    <link rel="icon" href="/favicon.png">
+    <link rel="icon" href="favicon.png">
   
   
     <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
@@ -94,7 +94,7 @@
       
         <h3 id="设置viewport标签"><a href="#设置viewport标签" class="headerlink" title="设置viewport标签"></a>设置viewport标签</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"viewport"</span> <span class="attr">content</span>=<span class="string">"width=device-width,user-scalable=no,initial-scale=1.0,  maximum-scale=1.0,minimum-scale=1.0"</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-
+<a id="more"></a>
 
 <h3 id="使用相对单位rem"><a href="#使用相对单位rem" class="headerlink" title="使用相对单位rem"></a>使用相对单位rem</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// rem.js</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 基准大小</span></span><br><span class="line"><span class="keyword">const</span> baseSize = <span class="number">32</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 设置 rem 函数</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">setRem</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="comment">// eslint-disable-next-line no-console</span></span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">'[setRem]'</span>)</span><br><span class="line">  <span class="comment">// 当前页面宽度相对于 750 宽的缩放比例，可根据自己需要修改。</span></span><br><span class="line">  <span class="keyword">const</span> scale = <span class="built_in">document</span>.documentElement.clientWidth / <span class="number">750</span></span><br><span class="line">  <span class="comment">// 设置页面根节点字体大小</span></span><br><span class="line">  <span class="built_in">document</span>.documentElement.style.fontSize = (baseSize * <span class="built_in">Math</span>.min(scale, <span class="number">2</span>)) + <span class="string">'px'</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 初始化</span></span><br><span class="line">setRem()</span><br><span class="line"></span><br><span class="line"><span class="comment">// 改变窗口大小时重新设置 rem</span></span><br><span class="line"><span class="built_in">window</span>.onresize = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">  setRem()</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
@@ -116,7 +116,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://kchriszhang.github.io/KChris/2020/06/01/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E9%80%82%E9%85%8D%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/" data-id="ckaw85wfl0003bous5jje6ci9" class="article-share-link">Share</a>
+      <a data-url="https://kchriszhang.github.io/KChris/2020/06/01/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E9%80%82%E9%85%8D%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/" data-id="ckaw7ws12000130us6j895c0h" class="article-share-link">Share</a>
       
       
     </footer>

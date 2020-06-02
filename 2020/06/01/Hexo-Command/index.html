@@ -7,15 +7,15 @@
   
   <title>Hexo Command | Practice</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Common Commands1234567891011# 创建项目hexo init [project-name]# 新建文章hexo new [layout] &#39;title&#39;# 本地运行hexo server# 服务器部署hexo deploy    Add Tags12345678910# create tag folderhexo new page tag# edit tag&#x2F;index.">
+  <meta name="description" content="建站123hexo init [project-name]cd [project-name]npm install   _config.yml：网站的配置信息 scafflods：模板文件夹 source：资源文件夹 _post 文件夹：文档 _[folder]：文件&#x2F;文件夹会被忽略 其他文件会被直接拷贝到public   themes：主题文件夹">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo Command">
 <meta property="og:url" content="https://kchriszhang.github.io/KChris/2020/06/01/Hexo-Command/index.html">
 <meta property="og:site_name" content="Practice">
-<meta property="og:description" content="Common Commands1234567891011# 创建项目hexo init [project-name]# 新建文章hexo new [layout] &#39;title&#39;# 本地运行hexo server# 服务器部署hexo deploy    Add Tags12345678910# create tag folderhexo new page tag# edit tag&#x2F;index.">
+<meta property="og:description" content="建站123hexo init [project-name]cd [project-name]npm install   _config.yml：网站的配置信息 scafflods：模板文件夹 source：资源文件夹 _post 文件夹：文档 _[folder]：文件&#x2F;文件夹会被忽略 其他文件会被直接拷贝到public   themes：主题文件夹">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-06-01T03:07:13.000Z">
-<meta property="article:modified_time" content="2020-06-01T03:33:27.877Z">
+<meta property="article:modified_time" content="2020-06-02T03:21:21.629Z">
 <meta property="article:author" content="Kchris Zhang">
 <meta property="article:tag" content="Learning">
 <meta name="twitter:card" content="summary">
@@ -23,7 +23,7 @@
     <link rel="alternate" href="/KChris/atom.xml" title="Practice" type="application/atom+xml">
   
   
-    <link rel="icon" href="/favicon.png">
+    <link rel="icon" href="favicon.png">
   
   
     <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
@@ -93,7 +93,31 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="Common-Commands"><a href="#Common-Commands" class="headerlink" title="Common Commands"></a>Common Commands</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 创建项目</span></span><br><span class="line">hexo init [project-name]</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 新建文章</span></span><br><span class="line">hexo new [layout] 'title'</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 本地运行</span></span><br><span class="line">hexo server</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 服务器部署</span></span><br><span class="line">hexo deploy</span><br></pre></td></tr></table></figure>
+        <h2 id="建站"><a href="#建站" class="headerlink" title="建站"></a>建站</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo init [project-name]</span><br><span class="line">cd [project-name]</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>_config.yml：网站的配置信息</li>
+<li>scafflods：模板文件夹</li>
+<li>source：资源文件夹<ul>
+<li>_post 文件夹：文档</li>
+<li>_[folder]：文件/文件夹会被忽略</li>
+<li>其他文件会被直接拷贝到public</li>
+</ul>
+</li>
+<li>themes：主题文件夹</li>
+</ul>
+<a id="more"></a>
+
+
+
+<h2 id="favicon设置"><a href="#favicon设置" class="headerlink" title="favicon设置"></a>favicon设置</h2><p>将favicon.png存放到source文件夹下，将theme/landscape/_config.yml</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 原来的</span></span><br><span class="line"><span class="attr">favicon:</span> <span class="string">/favicon</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 修改之后的</span></span><br><span class="line"><span class="attr">favicon:</span> <span class="string">favicon</span></span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<h2 id="Common-Commands"><a href="#Common-Commands" class="headerlink" title="Common Commands"></a>Common Commands</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 创建项目</span></span><br><span class="line">hexo init [project-name]</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 新建文章</span></span><br><span class="line">hexo new [layout] 'title'</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 本地运行</span></span><br><span class="line">hexo server</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 服务器部署</span></span><br><span class="line">hexo deploy</span><br></pre></td></tr></table></figure>
 
 
 
